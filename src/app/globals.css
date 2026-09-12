@@ -1,0 +1,386 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================================================
+   12 DISTINCT HIGH-VISIBILITY ANIMATED BACKGROUND LOOPS
+   ========================================================= */
+
+/* 1. HERO: Plasma Energy Orbs & Wave Drifts */
+@keyframes heroOrb1 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(60px, -45px) scale(1.15);
+  }
+  66% {
+    transform: translate(-50px, 50px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes heroOrb2 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(-55px, 40px) scale(0.88);
+  }
+  66% {
+    transform: translate(45px, -55px) scale(1.12);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes heroWaveDash {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -800;
+  }
+}
+
+@keyframes heroLineWave {
+  0%, 100% {
+    transform: translateY(0px) scaleY(1);
+  }
+  50% {
+    transform: translateY(-24px) scaleY(1.08);
+  }
+}
+
+@keyframes heroLineWaveAlt {
+  0%, 100% {
+    transform: translateY(0px) scaleY(1);
+  }
+  50% {
+    transform: translateY(24px) scaleY(0.92);
+  }
+}
+
+/* 2. STATS BANNER: Fast Shifting Multi-Color Aurora Mesh */
+@keyframes auroraMeshMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes laserSweepFast {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(350%);
+  }
+}
+
+/* 3. LIVE TUITION: Continuous Radar Sonar Sweep & Scanning Line */
+@keyframes sonarRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scanLineVertical {
+  0% {
+    top: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0.8;
+  }
+}
+
+/* 4. LEARNING CATEGORIES: Floating 3D Geometric Prisms */
+@keyframes prismBob1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-35px) rotate(15deg) scale(1.1);
+  }
+}
+
+@keyframes prismBob2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(30px) rotate(-18deg) scale(0.92);
+  }
+}
+
+@keyframes prismBob3 {
+  0%, 100% {
+    transform: translate(0px, 0px) rotate(45deg);
+  }
+  50% {
+    transform: translate(25px, -25px) rotate(70deg);
+  }
+}
+
+/* 5. TUTORING METHODS: Outward Concentric Shockwave Ripples */
+@keyframes magneticRipple {
+  0% {
+    transform: scale(0.4);
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes orbitSatellite {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 6. HOW IT WORKS: Circuit Data Spark Flow */
+@keyframes circuitPacketFlow {
+  0% {
+    stroke-dashoffset: 600;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes junctionPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 1;
+  }
+}
+
+/* 7. TESTIMONIALS: Rising Luminous Bokeh Orbs */
+@keyframes bokehAscend1 {
+  0% {
+    transform: translateY(60px) scale(0.8);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.2);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(-90px) scale(0.9);
+    opacity: 0.2;
+  }
+}
+
+@keyframes bokehAscend2 {
+  0% {
+    transform: translateY(70px) scale(0.9);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(-30px) scale(1.25);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100px) scale(0.85);
+    opacity: 0.25;
+  }
+}
+
+/* 8. HOW IT WORKS TUTORS: Sliding Energy Bands */
+@keyframes energyBandsSlide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 140px 140px;
+  }
+}
+
+@keyframes careerAuraPulse {
+  0%, 100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(1.25) translate(20px, -20px);
+    opacity: 0.7;
+  }
+}
+
+/* 9. SUCCESS STORIES: Twinkling Constellation Stars & Shooting Star */
+@keyframes starGlowFlash {
+  0%, 100% {
+    transform: scale(0.7);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+@keyframes shootingStarStreak {
+  0% {
+    transform: translateX(-100px) translateY(-50px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(400px) translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 10. WHY CHOOSE US: Floating Security Hexagons */
+@keyframes hexShieldFloat1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-28px) rotate(12deg) scale(1.12);
+  }
+}
+
+@keyframes hexShieldFloat2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(25px) rotate(-14deg) scale(1.08);
+  }
+}
+
+/* 11. CTA BANNER: Cosmic Plasma Vortex Spin */
+@keyframes cosmicVortexSpin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg) scale(1.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) scale(1);
+  }
+}
+
+/* 12. FOOTER: Undulating Digital Ocean Waves */
+@keyframes oceanWaveRoll1 {
+  0%, 100% {
+    transform: translateY(0px) scaleY(1);
+  }
+  50% {
+    transform: translateY(-16px) scaleY(1.15);
+  }
+}
+
+@keyframes oceanWaveRoll2 {
+  0%, 100% {
+    transform: translateY(0px) scaleY(1);
+  }
+  50% {
+    transform: translateY(14px) scaleY(0.9);
+  }
+}
+
+@keyframes digitalStream {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(1200px);
+    opacity: 0;
+  }
+}
+
+/* Legacy utilities */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(60px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.08) translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes growLine {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
